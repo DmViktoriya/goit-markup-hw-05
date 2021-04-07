@@ -135,7 +135,6 @@ p {
   display: flex;
   margin-left: auto;
 }
-
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -156,7 +155,7 @@ p {
 }
 .envelope,
 .smartphone {
-  fill: var(--icon-color);
+  fill: var(--primary-text-color);
   margin-right: 10px;
 }
 .contact:hover,
@@ -219,8 +218,7 @@ p {
 .hero {
   text-align: center;
 }
-.hero-container {
-  max-width: 1600 px;
+.hero-box {
   background-color: var(--hero-bg-color);
   background-image: linear-gradient(
       to left,
@@ -253,7 +251,6 @@ p {
   display: flex;
   text-decoration: none;
 }
-
 .feature-list > li:not(:last-child) {
   margin-right: 30px;
 }
@@ -321,9 +318,6 @@ p {
 .team > .container {
   padding-top: 94 px;
 }
-.ft {
-  padding-top: 94 px;
-}
 .team-header {
   padding: 0;
   margin-bottom: 50px;
@@ -383,7 +377,6 @@ p {
 }
 
 /*Социальные сети*/
-
 .social-icons {
   display: inline-flex;
   justify-content: center;
@@ -450,6 +443,13 @@ p {
   text-align: center;
   align-items: center;
 }
+.clients-item {
+  fill: var(--icon-color);
+}
+.clients-item:hover,
+.clients-item:focus {
+  fill: var(--accent-color);
+}
 .clients-link {
   display: flex;
   justify-content: center;
@@ -460,13 +460,6 @@ p {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.clients-item {
-  fill: var(--icon-color);
-}
-.clients-item:hover,
-.clients-item:focus {
-  fill: var(--accent-color);
-}
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
@@ -475,9 +468,11 @@ p {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+.clients-icon {
+  fill: var(--icon-color);
+}
 
 /* Портфолио */
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -503,7 +498,6 @@ p {
   margin-left: 30px;
   margin-top: 30px;
 }
-
 .portfolio-header {
   font-weight: 700;
   font-size: 18px;

@@ -572,3 +572,35 @@ p {
   margin-top: 12px;
   margin-left: 70px;
 }
+/*Модальное окно*/
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  z-index: 120;
+}
+.modal {
+  width: 100%;
+  max-width: 528px;
+  min-height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-bg-color);
+}
+.btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-title {
+  text-align: center;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

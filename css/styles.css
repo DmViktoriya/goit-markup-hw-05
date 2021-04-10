@@ -123,6 +123,7 @@ p {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav:hover,
 .nav:focus {
@@ -152,11 +153,13 @@ p {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .envelope,
 .smartphone {
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus,
@@ -183,16 +186,19 @@ p {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  background: var(--button-sleep);
+  background-color: var(--button-sleep);
   color: var(--button-letters);
   padding: 6px 22px;
   min-width: 73px;
   margin-right: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-portfolio .button:hover,
 .nav-portfolio .button:focus,
 .nav-portfolio .button:active {
-  background: var(--button-active);
+  background-color: var(--button-active);
   color: var(--button-letters-active);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -204,14 +210,16 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background: var(--button-active);
+  background-color: var(--button-active);
   color: var(--button-letters-active);
   padding: 10px 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero .button:hover,
 .hero .button:focus,
 .hero .button:active {
-  background: var(--button-active-hero);
+  background-color: var(--button-active-hero);
   color: var(--button-letters-active);
 }
 /* Герой */
@@ -408,11 +416,14 @@ p {
   background-color: var(--button-letters-active);
   border-radius: 50%;
   fill: var(--button-letters-active);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons .icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
@@ -438,6 +449,7 @@ p {
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   width: 20px;
@@ -464,8 +476,8 @@ p {
 .clients-item {
   fill: var(--icon-color);
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-item:hover .clients-icon,
+.clients-item:focus .client-icon {
   fill: var(--accent-color);
 }
 .clients-link {
@@ -488,6 +500,7 @@ p {
 }
 .clients-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфолио */
@@ -516,6 +529,7 @@ p {
   flex-basis: calc((100% - (30px * 3)) / 3);
   margin-left: 30px;
   margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-header {
   font-weight: 700;
@@ -544,6 +558,7 @@ p {
 }
 .portfolio-item {
   position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .port-box3 {
   padding: 20px 24px;
@@ -579,8 +594,6 @@ p {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  /*transform: translateY(-100%);
-  transition: transform 250ms easy;*/
 }
 .portfolio-thumb::before {
   display: inline-block;
@@ -592,7 +605,7 @@ p {
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
   transform: translateY(100%);
-  transition-duration: 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .portfolio-thumb:before,
@@ -604,7 +617,6 @@ p {
   left: 0;
   opacity: 1;
   transform: translateY(0);
-  transition-duration: 250ms;
 }
 
 /* Подвал */

@@ -236,9 +236,9 @@ p {
 /* Герой */
 .hero {
   text-align: center;
+  background-color: var(--hero-bg-color);
 }
 .hero-box {
-  background-color: var(--hero-bg-color);
   background-image: linear-gradient(
       to left,
       rgba(47, 48, 58, 0.4),
@@ -367,8 +367,6 @@ p {
 }
 .team-list {
   display: flex;
-  width: 1200;
-  padding: 15px;
   margin: 0 auto;
 }
 .team-item {
@@ -487,8 +485,8 @@ p {
 .clients-item {
   fill: var(--icon-color);
 }
-.clients-item:hover .clients-icon,
-.clients-item:focus .client-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 .clients-link {

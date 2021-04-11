@@ -545,7 +545,6 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-bottom: 4px;
   padding: 0;
 }
 .portfolio-description {
@@ -571,23 +570,28 @@ p {
 }
 
 .port-box3 {
-  /*position: absolute;*/
+  /*position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%;*/
   padding: 20px 24px;
-  background: var(--hero-color);
+  /*background: var(--hero-color);
   border: 1px solid #eeeeee;
-  border-top: none;
+  border-top: none;*/
 }
 .port-box {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   background: var(--hero-color);
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   border-top: none;
 }
 .portfolio-text {
